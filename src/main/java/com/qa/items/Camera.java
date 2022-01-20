@@ -69,4 +69,12 @@ public class Camera extends LibraryItem implements ElectronicDevice {
 	public void status() {
 
 	}
+
+	@Override
+	public String toString() {
+		return "Camera [fieldOfView=" + fieldOfView + ", shutterSpeed=" + shutterSpeed + ", lenses=" + lenses
+				+ ", brand=" + brand + ", getIsBorrowed()=" + getIsBorrowed() + "]";
+	}
+
 }
+
