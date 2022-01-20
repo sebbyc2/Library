@@ -35,14 +35,6 @@ public class Camera extends LibraryItem implements ElectronicDevice {
 	public void setShutterSpeed(double shutterSpeed) {
 		this.shutterSpeed = shutterSpeed;
 	}
-	
-	public String getModel() {
-		return model;
-	}
-	
-	public void setModel(String model) {
-		this.model = model;
-	}
 
 	public String getLenses() {
 		return lenses;
@@ -58,6 +50,14 @@ public class Camera extends LibraryItem implements ElectronicDevice {
 
 	public void setBrand(String brand) {
 		this.brand = brand;
+	}
+
+	public String getModel() {
+		return model;
+	}
+
+	public void setModel(String model) {
+		this.model = model;
 	}
 
 	@Override
@@ -87,4 +87,3 @@ public class Camera extends LibraryItem implements ElectronicDevice {
 	}
 
 }
-
