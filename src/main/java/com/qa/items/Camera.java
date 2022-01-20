@@ -2,11 +2,11 @@ package com.qa.items;
 
 public class Camera extends LibraryItem {
 
-	public Camera(String name, int fee, String brand, int fieldOfView, String lenses, double shutterSpeed) {
-		super(name, fee);
-		this.setBrand(name);
+	public Camera(String brand, String model, int fee, int fieldOfView, String lenses, double shutterSpeed) {
+		super((brand + " " + model), fee);
+		this.setBrand(brand);
 		this.setFieldOfView(fieldOfView);
-		this.setLenses(name);
+		this.setLenses(lenses);
 		this.setShutterSpeed(shutterSpeed);
 
 	}
