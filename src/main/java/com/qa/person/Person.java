@@ -33,11 +33,11 @@ public class Person {
 		this.name = name;
 	}
 
-	public int getdebt() {
+	public int getDebt() {
 		return debt;
 	}
 
-	public void setdebt(int debt) {
+	public void setDebt(int debt) {
 		this.debt = debt;
 	}
 
