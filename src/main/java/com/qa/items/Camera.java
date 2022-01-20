@@ -52,5 +52,4 @@ public class Camera extends LibraryItem {
 	public void throwIt() {
 
 	}
-
 }
