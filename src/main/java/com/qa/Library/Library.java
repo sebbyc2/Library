@@ -26,4 +26,44 @@ public class Library {
 		members.remove(person);
 	}
 
+	public boolean checkItem(int itemID) {
+
+		for (LibraryItem i : items) {
+			if (i.getId() == itemID)
+				return true;
+		}
+
+		return false;
+	}
+
+	public boolean checkMember(int memberID) {
+
+		for (Person p : members) {
+			if (p.getId() == memberID)
+				return true;
+		}
+
+		return false;
+	}
+
+	public void borrowItem(int itemID, int personID) {
+
+		if (checkItem(itemID) && checkMember(personID)) {
+			for (LibraryItem item : items) {
+				if (item.getId() == itemID) {
+
+					if (item.getIsBorrowed()) {
+						System.out.println("Item is already borrowed");
+						break;
+					} else {
+						item.borrowItem(personID);
+						break;
+					}
+				}
+
+			}
+		} else {
+			System.out.println("Item or person not valid");
+		}
+	}
 }
