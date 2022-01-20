@@ -7,6 +7,7 @@ public class Camera extends LibraryItem implements ElectronicDevice {
 	public Camera(String brand, String model, int fee, int fieldOfView, String lenses, double shutterSpeed) {
 		super((brand + " " + model), fee);
 		this.setBrand(brand);
+		this.setModel(model);
 		this.setFieldOfView(fieldOfView);
 		this.setLenses(lenses);
 		this.setShutterSpeed(shutterSpeed);
@@ -17,6 +18,7 @@ public class Camera extends LibraryItem implements ElectronicDevice {
 	private double shutterSpeed;
 	private String lenses;
 	private String brand;
+	private String model;
 
 	public int getFieldOfView() {
 		return fieldOfView;
@@ -32,6 +34,14 @@ public class Camera extends LibraryItem implements ElectronicDevice {
 
 	public void setShutterSpeed(double shutterSpeed) {
 		this.shutterSpeed = shutterSpeed;
+	}
+	
+	public String getModel() {
+		return model;
+	}
+	
+	public void setModel(String model) {
+		this.model = model;
 	}
 
 	public String getLenses() {
