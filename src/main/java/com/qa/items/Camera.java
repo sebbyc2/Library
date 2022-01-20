@@ -52,7 +52,6 @@ public class Camera extends LibraryItem implements ElectronicDevice {
 
 	@Override
 	public void throwIt() {
-
 	}
 
 	@Override

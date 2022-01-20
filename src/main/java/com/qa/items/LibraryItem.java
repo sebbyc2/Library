@@ -32,7 +32,7 @@ public abstract class LibraryItem {
 	}
 
 	// Abstract Methods
-	public abstract String throwIt();
+	public abstract void throwIt();
 
 	// Getters and Setters
 	public int getId() {
