@@ -1,5 +1,7 @@
 package com.qa.items;
 
-public class Book extends LibraryItem {
+import com.qa.Interfaces.PaperBased;
+
+public class Book extends LibraryItem implements PaperBased {
 
 }
