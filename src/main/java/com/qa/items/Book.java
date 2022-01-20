@@ -50,8 +50,8 @@ public class Book extends LibraryItem implements PaperBased {
 	}
 
 	@Override
-	public String throwIt() {
-		return "those Youtube reviews lied to you this book is ass, throws it across the room";
+	public void throwIt() {
+		System.out.println("those Youtube reviews lied to you this book is ass, throws it across the room");
 
 	}
 

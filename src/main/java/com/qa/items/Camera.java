@@ -52,21 +52,21 @@ public class Camera extends LibraryItem implements ElectronicDevice {
 
 	@Override
 	public void throwIt() {
-
+		System.out.println("Camera is Broken");
 	}
 
 	@Override
 	public void turnOn() {
-		
+
 	}
 
 	@Override
 	public void turnOff() {
-		
+
 	}
 
 	@Override
 	public void status() {
-		
+
 	}
 }
