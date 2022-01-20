@@ -34,14 +34,17 @@ public class Thesis extends LibraryItem implements PaperBased {
 	// Abstract method throwIt();
 
 	@Override
-<<<<<<< HEAD
-
-=======
 	public void throwIt() {
 		System.out.println("You cannot comprehent the thesis. You throw " + this.getName() + " in anger.");
->>>>>>> 4cbd997ce3514f8b7cca0c17170a7e35a7d18698
-
 	}
+
+	// toString
+
+	public String toString() {
+		return "Thesis \'" + this.getName() + "\' by " + this.getAuthor() + ". Field of concern: " + this.getTopic()
+				+ " . Late fee: " + this.getFee();
+	}
+
 	// Getters & setters
 
 	public String getAuthor() {
