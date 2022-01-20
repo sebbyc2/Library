@@ -23,7 +23,7 @@ public class Main {
 		oxford.addItem(nikon);
 		oxford.addItem(thethe);
 
-		oxford.borrowItem(0, 0);
+		oxford.borrowItem(1, 0);
 
 		oxford.getItems();
 
