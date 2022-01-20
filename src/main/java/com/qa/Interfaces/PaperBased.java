@@ -2,8 +2,8 @@ package com.qa.Interfaces;
 
 public interface PaperBased {
 
-	public void annotate();
+	public String annotate(String annotation);
 
-	public void photoCopy();
+	public String photoCopy();
 
 }
