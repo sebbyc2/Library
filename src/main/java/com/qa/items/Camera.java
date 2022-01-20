@@ -5,9 +5,9 @@ public class Camera extends LibraryItem {
 	public Camera(String name, int fee, String brand, int fieldOfView, String lenses, double shutterSpeed) {
 		super(name, fee);
 		this.setBrand(name);
-		this.setFieldOfView(fee);
+		this.setFieldOfView(fieldOfView);
 		this.setLenses(name);
-		this.setShutterSpeed(fee);
+		this.setShutterSpeed(shutterSpeed);
 	
 	}
 	private int fieldOfView;
