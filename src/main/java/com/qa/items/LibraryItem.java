@@ -7,7 +7,7 @@ public abstract class LibraryItem {
 	private boolean isBorrowed;
 	private Integer borrowerId;
 
-	// Shared atributes among all Library items
+	// Shared attributes among all Library items
 	private String name;
 	private int fee;
 

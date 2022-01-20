@@ -1,6 +1,8 @@
 package com.qa.items;
 
-public class Camera extends LibraryItem {
+import com.qa.Interfaces.ElectronicDevice;
+
+public class Camera extends LibraryItem implements ElectronicDevice {
 
 	public Camera(String brand, String model, int fee, int fieldOfView, String lenses, double shutterSpeed) {
 		super((brand + " " + model), fee);
@@ -51,5 +53,20 @@ public class Camera extends LibraryItem {
 	@Override
 	public void throwIt() {
 
+	}
+
+	@Override
+	public void turnOn() {
+		
+	}
+
+	@Override
+	public void turnOff() {
+		
+	}
+
+	@Override
+	public void status() {
+		
 	}
 }
