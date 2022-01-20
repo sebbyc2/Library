@@ -28,14 +28,14 @@ public class Thesis extends LibraryItem implements PaperBased {
 	}
 
 	public String photoCopy() {
-		return "a";
+		return "You make a copy of \'" + this.getName() + "\'";
 	}
 
 	// Abstract method throwIt();
 
 	@Override
 	public String throwIt() {
-		return "You cannot comprehent the thesis. You throw " + this.getName() + " in anger.";
+		return "You cannot comprehend the thesis. You throw \'" + this.getName() + "\' in anger.";
 
 	}
 	// Getters & setters
