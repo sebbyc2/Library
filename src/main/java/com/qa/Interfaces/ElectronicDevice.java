@@ -6,8 +6,6 @@ public interface ElectronicDevice {
 
 	public void turnOff();
 
-	public void charge();
-
 	public void status();
 
 }
