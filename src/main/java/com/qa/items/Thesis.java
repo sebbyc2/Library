@@ -28,7 +28,7 @@ public class Thesis extends LibraryItem implements PaperBased {
 	}
 
 	public String photoCopy() {
-		return "a";
+		return "You make a copy of \'" + this.getName() + "\'";
 	}
 
 	// Abstract method throwIt();
@@ -36,8 +36,15 @@ public class Thesis extends LibraryItem implements PaperBased {
 	@Override
 	public void throwIt() {
 		System.out.println("You cannot comprehent the thesis. You throw " + this.getName() + " in anger.");
-
 	}
+
+	// toString
+
+	public String toString() {
+		return "Thesis \'" + this.getName() + "\' by " + this.getAuthor() + ". Field of concern: " + this.getTopic()
+				+ " . Late fee: " + this.getFee();
+	}
+
 	// Getters & setters
 
 	public String getAuthor() {
