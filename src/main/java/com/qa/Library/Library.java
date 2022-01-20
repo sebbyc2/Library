@@ -1,5 +1,6 @@
 package com.qa.Library;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.qa.items.LibraryItem;
@@ -7,8 +8,18 @@ import com.qa.person.Person;
 
 public class Library {
 
-	private List<LibraryItem> items;
-	private List<Person> members;
+	private List<LibraryItem> items = new ArrayList<LibraryItem>();
+	private List<Person> members = new ArrayList<Person>();
+
+	public void getItems() {
+		for (LibraryItem item : this.items) {
+			System.out.println(item);
+		}
+	}
+
+	public List<Person> getMembers() {
+		return members;
+	}
 
 	public void addItem(LibraryItem item) {
 		items.add(item);
