@@ -34,8 +34,6 @@ public abstract class LibraryItem {
 	// Abstract Methods
 	public abstract void throwIt();
 
-	public abstract void describeIt();
-
 	// Getters and Setters
 	public int getId() {
 		return this.id;
