@@ -1,5 +1,5 @@
 package com.qa.items;
 
-public class LibraryItem {
+public abstract class LibraryItem {
 
 }
