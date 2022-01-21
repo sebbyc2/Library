@@ -4,6 +4,12 @@ import com.qa.Interfaces.ElectronicDevice;
 
 public class Camera extends LibraryItem implements ElectronicDevice {
 
+	private String brand;
+	private String model;
+	private int fieldOfView;
+	private String lenses;
+	private double shutterSpeed;
+
 	public Camera(String brand, String model, int fee, int fieldOfView, String lenses, double shutterSpeed) {
 		super((brand + " " + model), fee);
 		this.setBrand(brand);
@@ -11,37 +17,28 @@ public class Camera extends LibraryItem implements ElectronicDevice {
 		this.setFieldOfView(fieldOfView);
 		this.setLenses(lenses);
 		this.setShutterSpeed(shutterSpeed);
-
 	}
 
-	private int fieldOfView;
-	private double shutterSpeed;
-	private String lenses;
-	private String brand;
-	private String model;
-
-	public int getFieldOfView() {
-		return fieldOfView;
+	@Override
+	public String toString() {
+		return "Camera [fieldOfView=" + fieldOfView + ", shutterSpeed=" + shutterSpeed + ", lenses=" + lenses
+				+ ", brand=" + brand + ", getIsBorrowed()=" + getIsBorrowed() + "]";
 	}
 
-	public void setFieldOfView(int fieldOfView) {
-		this.fieldOfView = fieldOfView;
+	public void throwIt() {
+		System.out.println("Camera is Broken");
 	}
 
-	public double getShutterSpeed() {
-		return shutterSpeed;
+	public void turnOn() {
+		// method body modcheck
 	}
 
-	public void setShutterSpeed(double shutterSpeed) {
-		this.shutterSpeed = shutterSpeed;
+	public void turnOff() {
+		// method body modcheck
 	}
 
-	public String getLenses() {
-		return lenses;
-	}
-
-	public void setLenses(String lenses) {
-		this.lenses = lenses;
+	public void status() {
+		// method body modcheck
 	}
 
 	public String getBrand() {
@@ -60,30 +57,27 @@ public class Camera extends LibraryItem implements ElectronicDevice {
 		this.model = model;
 	}
 
-	@Override
-	public void throwIt() {
-		System.out.println("Camera is Broken");
+	public int getFieldOfView() {
+		return fieldOfView;
 	}
 
-	@Override
-	public void turnOn() {
-
+	public void setFieldOfView(int fieldOfView) {
+		this.fieldOfView = fieldOfView;
 	}
 
-	@Override
-	public void turnOff() {
-
+	public String getLenses() {
+		return lenses;
 	}
 
-	@Override
-	public void status() {
-
+	public void setLenses(String lenses) {
+		this.lenses = lenses;
 	}
 
-	@Override
-	public String toString() {
-		return "Camera [fieldOfView=" + fieldOfView + ", shutterSpeed=" + shutterSpeed + ", lenses=" + lenses
-				+ ", brand=" + brand + ", getIsBorrowed()=" + getIsBorrowed() + "]";
+	public double getShutterSpeed() {
+		return shutterSpeed;
 	}
 
+	public void setShutterSpeed(double shutterSpeed) {
+		this.shutterSpeed = shutterSpeed;
+	}
 }
