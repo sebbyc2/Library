@@ -31,7 +31,6 @@ public class Thesis extends LibraryItem implements PaperBased {
 
 	// Abstract Method throwIt();
 
-	@Override
 	public void throwIt() {
 		System.out.println("You cannot comprehent the thesis. You throw " + this.getName() + " in anger.");
 	}
