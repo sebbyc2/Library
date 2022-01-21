@@ -21,6 +21,9 @@ public abstract class LibraryItem {
 		this.isBorrowed = false;
 	}
 
+	// Abstract Methods
+	public abstract void throwIt();
+
 	// Methods
 	public void borrowItem(Integer borrowerId) {
 		this.isBorrowed = true;
@@ -32,20 +35,9 @@ public abstract class LibraryItem {
 		this.borrowerId = null;
 	}
 
-	// Abstract Methods
-	public abstract void throwIt();
-
 	// Getters and Setters
 	public int getId() {
 		return this.id;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
 	}
 
 	public boolean getIsBorrowed() {
@@ -54,6 +46,14 @@ public abstract class LibraryItem {
 
 	public Integer getBorrowerId() {
 		return borrowerId;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public int getFee() {
