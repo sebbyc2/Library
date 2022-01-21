@@ -1,6 +1,7 @@
 package com.qa.items;
 
 public abstract class LibraryItem {
+
 	// ID attributes
 	private static int id_counter = 0;
 	private int id;
