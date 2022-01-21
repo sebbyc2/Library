@@ -15,6 +15,24 @@ public class Book extends LibraryItem implements PaperBased {
 		this.setChapters(chapters);
 	}
 
+	@Override
+	public String toString() {
+		return "Book [genre=" + genre + ", author=" + author + ", chapters=" + chapters + "]";
+	}
+
+	public void throwIt() {
+		System.out.println("those Youtube reviews lied to you this book is ass, throws it across the room");
+
+	}
+
+	public String annotate(String annotation) {
+		return "You annotated " + this.getName() + " with: " + annotation;
+	}
+
+	public String photoCopy() {
+		return "You have created yourself a copy of " + this.getName();
+	}
+
 	public String getGenre() {
 		return this.genre;
 	}
@@ -38,21 +56,4 @@ public class Book extends LibraryItem implements PaperBased {
 	public void setChapters(int chapter) {
 		this.chapters = chapter;
 	}
-
-	@Override
-	public String annotate(String annotation) {
-		return "You annotated " + this.getName() + " with: " + annotation;
-	}
-
-	@Override
-	public String photoCopy() {
-		return "You have created yourself a copy of " + this.getName();
-	}
-
-	@Override
-	public void throwIt() {
-		System.out.println("those Youtube reviews lied to you this book is ass, throws it across the room");
-
-	}
-
 }
