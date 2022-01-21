@@ -11,10 +11,8 @@ public class Library {
 	private List<LibraryItem> items = new ArrayList<LibraryItem>();
 	private List<Person> members = new ArrayList<Person>();
 
-	public void getItems() {
-		for (LibraryItem item : this.items) {
-			System.out.println(item);
-		}
+	public List<LibraryItem> getItems() {
+		return items;
 	}
 
 	public List<Person> getMembers() {
